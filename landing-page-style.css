@@ -1,0 +1,82 @@
+﻿body{
+    margin: 0;
+    background-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma,sans-serif;
+}
+
+.navigation-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(181, 181, 181, 0.22);
+    color: #000000;
+    padding: 1vw;
+    box-sizing: border-box;
+}
+
+h2{ /* H2 was getting shifted to the left */
+    text-align: center;
+}
+
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(181, 181, 181, 0.22);
+    gap: 0.5rem;
+    padding-bottom: 2vw;
+}
+
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px){
+    img{
+        width: 100%;
+        max-width: 900px;
+    }
+}
+
+
+input[type="button"]{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2vw;
+    width: 10rem;
+    border-radius: 5vw ;
+    overflow: auto;
+}
+
+#register-button{
+    border-color: #008a23;
+    color: rgb(0, 138, 35);
+    box-shadow: 1px 1px 1px #000000;
+}
+
+#nav-bar-links a { /* Adjust Navigation Link Sizes */
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    text-decoration: none;
+    border-radius: 1vw;
+    padding: 1vw;
+}
+
+#nav-bar-links{
+    padding: 0.5vw;
+}
+
+
+a:hover,
+#registration-container input:hover {
+    background-color: rgba(232, 211, 179, 0.43);
+
+}
+
