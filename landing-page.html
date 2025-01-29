@@ -8,10 +8,10 @@
 </head>
 <body>
   <header id="main-header" class = "navigation-bar">
-    <!-- Navigation, Logo -->
-    <h1>Dog Daycare Name</h1>
-    <nav id="nav-bar-links">
-        <a href="landing-page.html">Home</a>
+    <!-- Navigation bar, Logo -->
+      <img src="resources/dog-logo.jpg" alt="dog-logo" id="nav-logo">
+      <strong id="place-holder-logo-text">big woofs<br>daycare</strong>
+    <nav class="nav-links">
         <a href="#daycare-services">Our Services</a>
         <a href="#about-us">About Us</a>
         <a href="#contact">Contact Us</a>
@@ -20,11 +20,11 @@
   <main>
     <section id="registration-container" class="content-container">
         <img src="resources/happy-dogs.jpg" alt="dogs">
-        <h2>A home away from home.</h2>
-        <span>
+        <h2>Daycare. Grooming. Happiness.</h2>
+        <div class="button-container">
             <input id="register-button" type="button" value="Register Now" onclick="getStarted()">
             <input type="button" value="Login" onclick="userLogin()">
-        </span>
+        </div>
     </section>
     <div class="content-container">
         <section id="about-us">
@@ -34,16 +34,15 @@
                 <figcaption>Proud professionals,
                     with 15 years of experience, taking care of dogs is our passion.</figcaption>
             </figure>
-
         </section>
-      <section id="daycare-services">
-          <h2>Our Services</h2>
-          <ul>
-              <li>Dog Daycare</li>
-              <li>Grooming</li>
-              <li>Training</li>
-          </ul>
-      </section>
+        <section id="daycare-services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Dog Daycare</li>
+                <li>Grooming</li>
+                <li>Training</li>
+            </ul>
+        </section>
       <section id="contact">
           <h2>Contact Us</h2>
           <p>Address:</p>
