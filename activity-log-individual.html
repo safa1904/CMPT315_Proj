@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="activity-log-individual-style.css">
+        <title>Excellent Dog Daycare - Pet Profile</title>
+    </head>
+    <!--idea s to have a couple photos at the top some blurbs about their day and an area for owner to comment-->
+
+    <body>
+        <header>
+            <!--TODO idk maybe do the date or something or keep it as static title-->
+            <h1>Day Journal</h1>
+            <nav>
+                <!--possibly use a global nav bar? replace these if yes-->
+                <a href="#home">Home</a>
+                <a href="#log">Activity Log</a>
+                <a href="#pet-profile">Pet Profile</a>
+                <a href="#account">Edit Profile</a>
+                <!--not fully sure of what links we will need/call them-->
+            </nav>
+        </header>
+        <section id="photo-gallery">
+            <!--photo section maybe 3 pics horizontal-->
+            <div class="image-container">
+                <img src="resources/pool.jpg" alt="pic-1" id="pic-1">
+                <img src="resources/friend.jpg" alt="pic-2" id="pic-2">
+                <img src="resources/smile.jpg" alt="pic-3" id="pic-3">
+            </div>
+
+        </section>
+        <section id="day-log">
+            <!--log of their day and where owners can comment give feedback w/e-->
+            <h2>Delta's day!</h2>
+            <p>Delta ended her day off with some carrots in the pool after going on a walk with her friend Indy!</p>
+            <h2>Feeding!</h2>
+            <p>Delta did not come with a lunch but she enjoyed carrots and some beef liver on her walk!</p>
+            <h2>Add-ons!</h2>
+            <p>Delta went on her scheduled walk today and got a little dirty stomping in mud puddles, we did give her a complimentary rinse before returning her to the group.</p>
+            <h2>Friends of the day!</h2>
+            <p>Indy, Thanos, Harlow, Odin, Cleo</p>
+            <form>
+                <label for="comment"> Leave a Comment:</label>
+                <input type="text" name="comment" id="comment" >
+                <!--clicking this button reloads the page lmao idk-->
+                <div class="button-container">
+                    <button type="submit"><span>Comment</span></button>
+                </div>
+            </form>
+        </section>
+        <div class="button-container">
+            <button type="submit"><span>Back</span></button>
+        </div>
+
+        <footer>
+            <p>Copyright&copy; Excellent Dog Daycare 2025</p>
+        </footer>
+    </body>
+</html>
