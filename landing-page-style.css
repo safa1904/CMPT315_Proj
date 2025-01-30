@@ -11,7 +11,37 @@
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background-color: rgba(181, 181, 181, 0.22);
+    background-color: rgb(142, 165, 135);
+}
+
+.nav-links a { /* Adjust Navigation Link Sizes */
+    display: inline-block;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgba(181, 181, 181, 0.24);
+    text-decoration: none;
+    border-radius: 2vw;
+    padding: 1vw;
+}
+
+/* Hover FX for Buttons + nav */
+.button-container button:hover,
+a:hover
+{
+    background-color: rgba(78, 142, 162, 0.24);
+}
+
+
+#nav-logo{ /* adjust nav bar logo */
+    width: 5rem;
+    height: auto;
+    border-radius: 5rem;
+    object-fit: cover;
+}
+
+#place-holder-logo-text{
+    padding: 1rem 2rem 1rem 1rem;
 }
 
 h2{ /* H2 was getting shifted to the left */
@@ -32,64 +62,49 @@ h2{ /* H2 was getting shifted to the left */
 
 #registration-container{
     gap: 0.1rem;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 img{
     width: 100%;
-    max-width: 700px; /* max width cap for desktop enjoyers */
     height: auto;
     display: block;
+    border-radius: 0.5rem;
 }
 
-#nav-logo{ /* adjust nav bar logo */
-    width: 5rem;
-    height: auto;
-    border-radius: 5rem;
-    object-fit: cover;
+@media (min-width: 768px){ /* re-adjust image width for large screens */
+    img{
+        width: 50vw;
+        justify-self: center; /* Caption seems to shift image to the left when resized */
+    }
 }
 
-#place-holder-logo-text{
-    padding: 1rem;
-}
-
-
-input[type="button"]{
+.button-container button{
     display: inline-block;
     text-align: center;
     vertical-align: middle;
     padding: 1rem 2rem;
     width: auto;
     font-size: 1rem;
-    border: 1px solid black;
+    border: none;
     border-radius: 10vw ;
     overflow: auto;
     cursor: pointer;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
 }
 
 
+
 #register-button{ /* call to action green to catch the eye */
-    background-color: rgb(87, 126, 76);
-    border: 2px solid rgba(0, 0, 0, 0.5);
+    background-color: rgb(233, 90, 90);
+    border: none;
     color: rgb(255, 255, 255, 0.95);
     font-weight: bold;
 }
 
-.nav-links a { /* Adjust Navigation Link Sizes */
-    display: inline-block;
-    font-size: 1rem;
-    color: rgb(0, 0, 0);
-    border: 1px solid black;
-    text-decoration: none;
-    border-radius: 2vw;
-    padding: 1vw;
-
+#register-button:hover{
+    background-color: rgb(143, 166, 136);
 }
-
-a:hover, /* Hover FX for Buttons + nav */
-#registration-container input:hover {
-    background-color: rgb(117, 202, 90);
-}
-
 
 /* Stack nav for mobile, replace with hamburger in future */
 @media (max-width: 768px) { /* If smaller */
