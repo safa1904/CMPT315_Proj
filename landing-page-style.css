@@ -32,13 +32,15 @@ h2{ /* H2 was getting shifted to the left */
 
 #registration-container{
     gap: 0.1rem;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 img{
     width: 100%;
-    max-width: 700px; /* max width cap for desktop enjoyers */
+    max-width: 900px; /* max width cap for desktop enjoyers */
     height: auto;
     display: block;
+    border-radius: 0.5rem;
 }
 
 #nav-logo{ /* adjust nav bar logo */
@@ -76,7 +78,7 @@ input[type="button"]{
 
 .nav-links a { /* Adjust Navigation Link Sizes */
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: rgb(0, 0, 0);
     border: 1px solid black;
     text-decoration: none;
@@ -87,7 +89,7 @@ input[type="button"]{
 
 a:hover, /* Hover FX for Buttons + nav */
 #registration-container input:hover {
-    background-color: rgb(117, 202, 90);
+    background-color: rgba(43, 158, 2, 0.82);
 }
 
 
