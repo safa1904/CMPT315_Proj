@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="pet-info-edit-style.css">
+        <title>Excellent Dog Daycare - Pet Profile</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Pet Profile</h1>
+            <nav>
+                <!--possibly use a global nav bar? replace these if yes-->
+                <a href="#home">Home</a>
+                <a href="#log">Activity Log</a>
+                <a href="#pet-profile">Pet Profile</a>
+                <a href="#account">Edit Profile</a>
+                <!--not fully sure of what links we will need/call them-->
+            </nav>
+        </header>
+
+        <section id="pet-profile">
+            <div class="image-name">
+                <div class="profile-container">
+                    <img src="resources/petpreview.jpg" alt="profile-pic" id="profile-pic">
+                    <div class="upload-overlay">Upload Image</div>
+                    <input type="file" id="file-upload" class="file-input" accept="image/*">
+                </div>
+                
+            </div>
+        </section>
+
+        <!--TODO: ideally the edit form will pull the already saved info and display that in edit screen-->
+        <section id="info-form">
+            <form>
+                
+                <label for="name"> Pet Name:</label>
+                <input type="text" name="name" id="name" >
+
+                <label for="allergies"> Allergies:</label>
+                <input type="text" name="allergies" id="allergies">
+                
+                <label for="birthday"> <strong>Birthday:</strong></label>
+                <input type="text" name="birthday" id="birthday">
+                
+                <label for="breed"> Breed:</label>
+                <input type="text" name="breed" id="breed" >
+                
+                <label for="sex">Sex:</label>
+                <div id="sex-options">
+                    <input type="radio" id="male" name="sex" value="Male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="sex" value="Female">
+                    <label for="female">Female</label>
+
+                    <input type="radio" id="male-neutered" name="sex" value="Male Neutered">
+                    <label for="male-neutered">Male (Neutered)</label>
+
+                    <input type="radio" id="female-spayed" name="sex" value="Female Spayed">
+                    <label for="female-spayed">Female (Spayed)</label>
+                </div>
+                
+                <label for="feeding"> Feeding Instructions:</label>
+                <input type="text" name="feeding" id="feeding" >
+                
+                <label for="medical"> Medical:</label>
+                <input type="text" name="medical" id="medical" >
+                
+                <label for="likes"> Likes:</label>
+                <input type="text" name="likes" id="likes" >
+                
+                <label for="dislikes"> Dislikes:</label>
+                <input type="text" name="dislikes" id="dislikes" >
+                
+                <label for="vaccines"> Vaccines:</label>
+                <input type="text" name="vaccines" id="vaccines">
+                </div>
+                <br>
+            </form>
+            
+            <div class="button-container">
+                <button type="submit"><span>Save</span></button>
+            </div>
+        </section>
+
+
+        <footer>
+            <p>Copyright&copy; Excellent Dog Daycare 2025</p>
+        </footer>
+
+    </body>
+</html>
