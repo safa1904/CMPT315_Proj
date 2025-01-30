@@ -18,16 +18,18 @@
     display: inline-block;
     font-size: 1.2rem;
     color: rgb(255, 255, 255);
-    border: 1px solid;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgba(181, 181, 181, 0.24);
     text-decoration: none;
     border-radius: 2vw;
     padding: 1vw;
 }
 
+/* Hover FX for Buttons + nav */
 .button-container button:hover,
-a:hover /* Hover FX for Buttons + nav */
+a:hover
 {
-    background-color: rgba(181, 181, 181, 0.24);
+    background-color: rgba(78, 142, 162, 0.24);
 }
 
 
@@ -39,7 +41,7 @@ a:hover /* Hover FX for Buttons + nav */
 }
 
 #place-holder-logo-text{
-    padding: 1rem;
+    padding: 1rem 2rem 1rem 1rem;
 }
 
 h2{ /* H2 was getting shifted to the left */
@@ -65,12 +67,17 @@ h2{ /* H2 was getting shifted to the left */
 
 img{
     width: 100%;
-    max-width: 1024px; /* max width cap for desktop enjoyers */
     height: auto;
     display: block;
     border-radius: 0.5rem;
 }
 
+@media (min-width: 768px){ /* re-adjust image width for large screens */
+    img{
+        width: 50vw;
+        justify-self: center; /* Caption seems to shift image to the left when resized */
+    }
+}
 
 .button-container button{
     display: inline-block;
