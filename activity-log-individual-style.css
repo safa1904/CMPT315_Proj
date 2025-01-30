@@ -16,68 +16,51 @@ header nav a:hover{
     background-color: #e8d4d4;
     transition: 00.3s;
 }
-
-#pet-profile {
-    text-align: center;
-}
-#pet-profile img {
+#photo-gallery img {
     border: 1px solid rgb(159, 157, 157);
-    width: 200px;
+    width: 300px;
     padding: 10px;
     margin: 20px auto;
     background: rgb(255, 255, 255);
     border-radius: 30px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-
-    display: block;
-    transition: opacity 0.3s ease-in-out;
 }
-#pet-profile h2 {
-    margin-top: -10px; /*wanted it closer to the pfp*/
+.image-container {
+    display: flex;
+    justify-content: flex-end;
 }
 
-.profile-container {
-    position: relative;
+#day-log {
+    max-width: 70%;
+    text-align: center;
+    margin: 20px auto;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+}
+/*#day-log p {
+    maybe get text to only go x width?
+}*/
+#day-log form {
+    font-weight: bold;
+    max-width: 80%;
+    text-align: center;
+    margin: 20px auto;
+    background: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
     display: inline-block;
 }
-
-.upload-overlay {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 86%; /*the size is very slightly off*/
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    cursor: pointer;
-    transform: translateY(8%); /*to keep the overlay out of the sky*/
-}
-
-.profile-container:hover {
-    opacity: 0.4;
-}
-
-.profile-container:hover .upload-overlay {
-    opacity: 1;
-    text-decoration: underline;
-}
-
-.file-input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0; 
-    cursor: pointer;
+#day-log input, #day-log textarea {
+    width: 60%; /*input span x amount of given area*/
+    /*height: -10%;/*tried to get the text areaa to cover more vertical but i am failing lol*/
+    padding: 50px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
 }
 
 /*FOR THE BUTTON HOVER I USED "Custom Icon CSS Button Hover":https://www.sliderrevolution.com/resources/css-button-hover-effects/
@@ -89,7 +72,7 @@ header nav a:hover{
 }
 button {
     border-radius: 4px;
-    background-color: #e95959;
+    background-color: #2d942d;
     border: none;
     color: #fff;
     text-align: center;
@@ -129,46 +112,6 @@ button {
     opacity: 1;
     right: 10px;
   }
-
-#info-form {
-    max-width: 80%;
-    text-align: left;
-    margin: 20px auto;
-    background: rgb(255, 255, 255);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#info-form label {
-    display: block;
-    font-weight: bold; 
-    margin-bottom: 5px;
-}
-
-#info-form input, #info-form textarea {
-    width: 90%; /*input span x amount of given area*/
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    display: block; 
-}
-
-#sex-options {
-    display: flex;
-    flex-direction: row; 
-    margin-bottom: 15px;
-    gap: 10px;
-    max-width: 100%; 
-    justify-content: center;
-}
-
-#sex-options input {
-    margin-right: 3px;
-    width: auto; /*needed or it was crazy distorted*/
-}
-
 /* styling for footer 
 */
 footer {
