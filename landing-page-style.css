@@ -59,15 +59,19 @@ input[type="button"]{
     vertical-align: middle;
     padding: 1rem 2rem;
     width: auto;
-    border-radius: 5vw ;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 10vw ;
     overflow: auto;
+    cursor: pointer;
 }
 
 
 #register-button{ /* call to action green to catch the eye */
-    border-color: rgba(4, 170, 109, 0.68);
-    color: rgb(0, 138, 35);
-    box-shadow: 1px 1px 1px #000000;
+    background-color: rgb(87, 126, 76);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255, 0.95);
+    font-weight: bold;
 }
 
 .nav-links a { /* Adjust Navigation Link Sizes */
@@ -76,15 +80,14 @@ input[type="button"]{
     color: rgb(0, 0, 0);
     border: 1px solid black;
     text-decoration: none;
-    border-radius: 1vw;
+    border-radius: 2vw;
     padding: 1vw;
 
 }
 
-
 a:hover, /* Hover FX for Buttons + nav */
 #registration-container input:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(117, 202, 90);
 }
 
 
