@@ -1,0 +1,136 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color:black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('resources/mountain.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+
+/* Dashboard Container - Full Page */
+.dashboard-container {
+    width: 90%;
+    max-width: 1200px; /* Keeps content readable on large screens */
+    height: 90vh; 
+    background: rgb(225, 225, 225,0.5);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.dashboard-container:hover {
+    background-color: white;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+/* Logo Image */
+.logo {
+    width: 50px; /* Adjust width to match text size */
+    height: auto;
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.dashboard-header h1 {
+    font-size: 2.5em;
+    color: black;
+    font-weight: bold;
+}
+
+/* User Information Section */
+.user-info-section {
+    margin-bottom: 20px;
+}
+
+.user-info-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.profile-picture img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #2c3e50;
+}
+
+/* Pet List Section */
+.pet-list-section {
+    margin-bottom: 20px;
+}
+
+.pet-list-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.pet-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pet-list li {
+    margin-bottom: 5px;
+}
+
+.pet-list a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pet-list a:hover {
+    text-decoration: underline;
+}
+
+/* Activity Feed Section */
+.activity-feed-section {
+    
+    margin-bottom: 20px;
+}
+
+.activity-feed-section h2 {
+    
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    
+}
+
+.activity-feed {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.activity-feed li {
+    margin-bottom: 5px;
+}
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: black;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #116854; 
+}
