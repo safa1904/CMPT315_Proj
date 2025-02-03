@@ -101,6 +101,33 @@ button {
 .login-btn:hover {
     background-color: #187438;
 }
+
+navigation-bar{
+    background-color: rgb(19, 105, 85);
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-links a { /* Adjust Navigation Link Sizes /
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    border: none;
+    text-decoration: none;
+    padding: 1vw;
+}
+
+/ Hover FX for Buttons + nav */
+a:hover
+{
+    background-color: rgba(78, 142, 162, 0.24);
+}
+
 /* Footer */
 footer {
     position: absolute;
