@@ -1,19 +1,16 @@
 ﻿body{
     margin: 0;
-    /*pastel vibe background: linear-gradient(to right, rgb(252, 238, 230), rgb(248, 231, 240), rgb(234, 229, 247), rgb(222, 249, 235), rgb(218, 235, 253));*/
-    /*background: linear-gradient(to left, rgba(0, 138, 35, 0.6), rgb(65, 197, 169), rgb(193, 193, 193));*/
-    background: linear-gradient(to top, rgba(9, 191, 94, 0.6), rgb(193, 193, 193));
+    background: linear-gradient(to right, rgb(252, 238, 230), rgb(248, 231, 240), rgb(234, 229, 247), rgb(222, 249, 235), rgb(218, 235, 253));
     font-family: 'Optimistic Text Normal', Helvetica, Arial, sans-serif;
 }
 
 .navigation-bar{
     background-color: rgb(19, 105, 85);
     display: flex;
-    height: auto;
+    height: fit-content;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
 }
 
 .nav-links a { /* Adjust Navigation Link Sizes */
@@ -49,8 +46,8 @@ a:hover
 
 h2{ /* H2 was getting shifted to the left */
     text-align: center;
-    font-family: 'Optimistic Display Medium', Helvetica, Arial, sans-serif;
-    font-weight: 500;
+    font-family: 'Optimistic Display N', Helvetica, Arial, sans-serif;
+    font-weight: 400;
     font-size: 1.5rem;
 }
 
@@ -67,19 +64,30 @@ h2{ /* H2 was getting shifted to the left */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(181, 181, 181, 0.22);
-    gap: 0.5rem;
-    padding-bottom: 2vw;
+    padding-bottom: 1rem;
 }
 
 #registration-container{
     gap: 0.1rem;
 }
 
+figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 img{
     display: block;
     max-width: 100%;
     border-radius: 20px;
+}
+
+@media (min-width: 768px){
+    img{
+        max-width: 50%;
+    }
 }
 
 
