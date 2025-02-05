@@ -1,6 +1,11 @@
 ﻿body{
     margin: 0;
-    background: linear-gradient(to right, rgb(252, 238, 230), rgb(248, 231, 240), rgb(234, 229, 247), rgb(222, 249, 235), rgb(218, 235, 253));
+    background: linear-gradient(to right,
+    rgb(240, 250, 245), /* Pastel Gradient Background */
+    rgb(225, 245, 235),
+    rgb(235, 240, 250),
+    rgb(250, 245, 240)
+    );
     font-family: 'Optimistic Text Normal', Helvetica, Arial, sans-serif;
 }
 
@@ -45,10 +50,11 @@ a:hover
 }
 
 h2{ /* H2 was getting shifted to the left */
+    color: #1c2b33;
     text-align: center;
     font-family: 'Optimistic Display N', Helvetica, Arial, sans-serif;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 @media (min-width: 768px){ /* Scale up headings for large screens */
@@ -67,9 +73,6 @@ h2{ /* H2 was getting shifted to the left */
     padding-bottom: 1rem;
 }
 
-#registration-container{
-    gap: 0.1rem;
-}
 
 figure{
     display: flex;
@@ -78,19 +81,20 @@ figure{
     align-items: center;
 }
 
+
 img{
     display: block;
     max-width: 100%;
-    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    justify-self: center;
 }
 
 @media (min-width: 768px){
-    img{
+    img {
+        display: block;
         max-width: 50%;
     }
 }
-
-
 
 .button-container button{
     display: inline-block;
@@ -113,6 +117,8 @@ img{
 #register-button{ /* call to action green to catch the eye */
     background-color: rgb(67, 184, 44);
 }
+
+footer{justify-self: center}
 
 
 /* Stack nav for mobile, replace with hamburger in future */
