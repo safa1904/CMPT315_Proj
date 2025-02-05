@@ -10,7 +10,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('resources/mountain.jpg') no-repeat center fixed; /* Set mountain image */
+    background: url('../resources/mountain.jpg') no-repeat center fixed; /* Set mountain image */
     background-size: cover;
 }
 
