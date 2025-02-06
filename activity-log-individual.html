@@ -2,22 +2,22 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="common/style.css">
         <link rel="stylesheet" href="CSS/activity-log-individual-style.css">
         <title>Excellent Dog Daycare - Pet Profile</title>
     </head>
     <!--idea s to have a couple photos at the top some blurbs about their day and an area for owner to comment-->
 
     <body>
-        <header>
-            <!--TODO idk maybe do the date or something or keep it as static title-->
-            <h1>Day Journal</h1>
-            <nav>
-                <!--possibly use a global nav bar? replace these if yes-->
-                <a href="#home">Home</a>
-                <a href="#log">Activity Log</a>
-                <a href="#pet-profile">Pet Profile</a>
-                <a href="#account">Edit Profile</a>
-                <!--not fully sure of what links we will need/call them-->
+        <header id="main-header" class = "navigation-bar">
+            <!-- Navigation bar, Logo -->
+                <img src="resources/dog-logo.jpg" alt="dog-logo" id="nav-logo">
+                <strong id="place-holder-logo-text">Excellent <br> Dog Daycare</strong>
+            <nav class="nav-links">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#activity-log">Activity Log</a>
+                <a href="#profile">Profile</a>
+                <a href="#logout">Logout</a> 
             </nav>
         </header>
         <section id="photo-gallery">

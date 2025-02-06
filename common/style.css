@@ -7,8 +7,10 @@ body, html {
     font-family: Arial, sans-serif;
     height: 100%; 
     width: 100%;
+    /* I removed this cause it was making everything squish to middle page-tc
     display: flex;
     justify-content: center;
+    */
     align-items: center;
     background: url('../resources/mountain.jpg') no-repeat center fixed; /* Set mountain image */
     background-size: cover;

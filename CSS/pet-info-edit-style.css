@@ -1,21 +1,4 @@
-/* 
-    TODO nav bar links make nicer or have a global nav baar design
-*/
-header {
-    /*Add bg img of the dogs playing??*/
-    background-color: rgb(141, 164, 134);
-    text-align: center;
-    padding: 20px;
-}
 
-header nav a { /*needed to have "a" at the end for the padding to go between each link*/
-    /*margin-right: 30px; /*adds 30 pixels to the right of each link*/
-    margin: 0px 30px;
-}
-header nav a:hover{
-    background-color: #e8d4d4;
-    transition: 00.3s;
-}
 
 #pet-profile {
     text-align: center;
@@ -39,6 +22,34 @@ header nav a:hover{
 .profile-container {
     position: relative;
     display: inline-block;
+}
+#photo-gallery {
+    text-align: center;
+}
+#photo-gallery img {
+    border: 1px solid rgb(159, 157, 157);
+    width: 200px;
+    padding: 10px;
+    margin: 20px 65px;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease-in-out;
+}
+.image-container {
+    display: flex; /* Aligns images in a row */
+    justify-content: center; /* Centers images horizontally */
+    gap: 20px; /* Space between the images */
+}
+.image-wrapper {
+    position: relative;
+}
+.image-wrapper:hover .upload-overlay {
+    opacity: 0; /*overlay when hover--> made it not visible idk the box being annoying*/
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.05); /* Slightly zoom in the image when hovered */
 }
 
 .upload-overlay {
@@ -89,7 +100,7 @@ header nav a:hover{
 }
 button {
     border-radius: 4px;
-    background-color: #e95959;
+    background-color:#116854;
     border: none;
     color: #fff;
     text-align: center;
@@ -116,13 +127,13 @@ button {
     top: 10px;
     right: -20px;
     transition: 0.3s;
-    background-color: #2d942d;
+    background-color: #187438;
   }
   
   button:hover{
     padding-right: 24px;
     padding-left:8px;
-    background-color: #2d942d;
+    background-color: #187438;
   }
   
   button:hover:after {
@@ -147,7 +158,7 @@ button {
 }
 
 #info-form input, #info-form textarea {
-    width: 90%; /*input span x amount of given area*/
+    width: 98%; /*input span x amount of given area*/
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -158,21 +169,14 @@ button {
 #sex-options {
     display: flex;
     flex-direction: row; 
-    margin-bottom: 15px;
+    margin-bottom: 3px;
     gap: 10px;
     max-width: 100%; 
     justify-content: center;
 }
 
 #sex-options input {
-    margin-right: 3px;
+    margin-right: 10px;
     width: auto; /*needed or it was crazy distorted*/
 }
 
-/* styling for footer 
-*/
-footer {
-    background-color: blanchedalmond;
-    text-align: center;
-    padding: 10px;
-}
