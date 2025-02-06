@@ -1,53 +1,44 @@
-/* 
-    TODO nav bar links make nicer or have a global nav baar design
-*/
-header {
-    /*Add bg img of the dogs playing??*/
-    background-color: rgb(141, 164, 134);
-    text-align: center;
-    padding: 20px;
-}
 
-header nav a { /*needed to have "a" at the end for the padding to go between each link*/
-    /*margin-right: 30px; /*adds 30 pixels to the right of each link*/
-    margin: 0px 30px;
-}
-header nav a:hover{
-    background-color: #e8d4d4;
-    transition: 00.3s;
-}
 #photo-gallery img {
     border: 1px solid rgb(159, 157, 157);
     width: 300px;
+    max-width: 100%;
     padding: 10px;
     margin: 20px auto;
     background: rgb(255, 255, 255);
     border-radius: 30px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 .image-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#photo-gallery img:hover {
+    transform: scale(1.3);  /*enlarge image on hover (size*1.3) = 30% larger*/
 }
 
 #day-log {
-    max-width: 70%;
+    max-width: 90%;
     text-align: center;
     margin: 20px auto;
-    background: rgb(255, 255, 255);
+    /*TODO idk if we should just have this static white or if we wanna keep the hover effect it hurts my eyes but maybe thats a me issue*/
+    background: rgba(255, 255, 255, 0.5);
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 8px;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
 }
-/*#day-log p {
-    maybe get text to only go x width?
-}*/
+#day-log:hover{
+    background-color: white;
+}
 #day-log form {
     font-weight: bold;
     max-width: 80%;
     text-align: center;
     margin: 20px auto;
-    background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255, 0.5);
     padding: 15px;
     border-radius: 15px;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
@@ -60,6 +51,7 @@ header nav a:hover{
     margin-bottom: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background: rgb(255, 255, 255, 0.5);
     
 }
 
@@ -68,17 +60,19 @@ header nav a:hover{
 /*container so that i could take it all and shift it over to the right side of page*/
 .button-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    margin-top: 20px;
 }
 button {
     border-radius: 4px;
-    background-color: #2d942d;
+    background-color: #116854;
     border: none;
     color: #fff;
     text-align: center;
     font-size: 12px;
-    padding: 10px;
-    width: 100px;
+    padding: 10px 20px;
+    width: auto;
+    max-width: 200px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 36px;
@@ -99,23 +93,16 @@ button {
     top: 10px;
     right: -20px;
     transition: 0.3s;
-    background-color: #2d942d;
+    background-color: #187438;
   }
   
   button:hover{
     padding-right: 24px;
     padding-left:8px;
-    background-color: #2d942d;
+    background-color: #187438;
   }
   
   button:hover:after {
     opacity: 1;
     right: 10px;
   }
-/* styling for footer 
-*/
-footer {
-    background-color: blanchedalmond;
-    text-align: center;
-    padding: 10px;
-}
