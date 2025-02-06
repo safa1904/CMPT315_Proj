@@ -149,6 +149,7 @@ a:hover
     background-color: rgba(78, 142, 162, 0.24);
 }
 
+
 /* Corresponding nav HTML: 
 <header class = "navigation-bar">
     <!-- Navigation bar, Logo -->
@@ -160,7 +161,136 @@ a:hover
         <a href="#contact">Contact Us</a>
     </nav>
   </header>
-/*
+*/
+
+/* form styles */
+form {
+    background: rgba(225, 225, 225, 0.5);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: left;
+    margin: auto;
+}
+
+
+form * {
+    background: transparent;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 2px solid #116854;
+    font-size: 16px;
+    outline: none;
+}
+
+.form_buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.submit_button,
+.cancel_button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.submit_button {
+    background-color: #116854;
+    color: white;
+}
+
+.submit_button:hover {
+    background-color: #187438;
+}
+
+.cancel_button {
+    background-color: rgb(200, 200, 200);
+}
+
+.cancel_button:hover {
+    background-color: rgb(160, 160, 160);
+}
+
+/* end form style */
+
+/* common table style */
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: rgba(225, 225, 225, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+th {
+    background-color: #116854;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    text-align: left;
+}
+
+
+td {
+    padding: 12px;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(240, 240, 240, 0.6);
+}
+
+
+tbody tr:hover {
+    background-color: rgba(78, 142, 162, 0.24);
+}
+
+
+th, td {
+    border-left: 1px solid #ccc;
+}
+
+th:first-child, td:first-child {
+    border-left: none;
+}
+
+
+tfoot {
+    background-color: rgba(19, 105, 85, 0.9);
+    color: white;
+    font-weight: bold;
+}
+
+/* end table style */
+
+
+
+
+
+
+
 
 /* Footer */
 footer {
