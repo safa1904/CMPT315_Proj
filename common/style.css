@@ -144,7 +144,8 @@ button {
 }
 
 /* Hover FX for Buttons + nav */
-a:hover
+/*changed it to just .nav-links a (previously a) i was TIRED of getting rid of the hover on each button*/
+.nav-links a:hover
 {
     background-color: rgba(78, 142, 162, 0.24);
 }
