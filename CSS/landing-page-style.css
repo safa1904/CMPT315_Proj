@@ -31,6 +31,7 @@
 /* Hover FX for Buttons + nav */
 a:hover
 {
+    transform: scale(1.2);
     background-color: rgba(78, 142, 162, 0.24);
 }
 
@@ -116,6 +117,10 @@ img{
 
 #register-button{ /* call to action green to catch the eye */
     background-color: rgb(67, 184, 44);
+}
+
+.button-container button:hover{
+    transform: scale(1.2);
 }
 
 footer{justify-self: center}
