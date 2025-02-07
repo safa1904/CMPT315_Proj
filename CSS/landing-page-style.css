@@ -8,7 +8,9 @@
     /*);*/
     background: url('../resources/mountain.jpg') no-repeat center fixed; /* Set mountain image */
     background-size: cover;
+    background-position: calc(100%) center;
     font-family: 'Optimistic Text Normal', Helvetica, Arial, sans-serif;
+    color: #000000;
 }
 
 .navigation-bar{
@@ -74,7 +76,10 @@ h2{ /* H2 was getting shifted to the left */
     align-items: center;
     justify-content: center;
     padding-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 0.41);
 }
+
+
 
 
 figure{
@@ -84,12 +89,12 @@ figure{
     align-items: center;
 }
 
-
 img{
     display: block;
     max-width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     justify-self: center;
+    border-radius: 30px;
 }
 
 @media (min-width: 768px){
@@ -97,6 +102,16 @@ img{
         display: block;
         max-width: 50%;
     }
+}
+
+#happy-dogs-img{
+    padding-top: 1rem;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .button-container button{
@@ -111,7 +126,7 @@ img{
     overflow: auto;
     cursor: pointer;
     color: rgb(255, 255, 255, 0.95);
-    background-color: rgba(10, 103, 255, 0.78);
+    background-color: rgb(10, 103, 255);
     font-weight: bold;
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
 }
@@ -125,7 +140,16 @@ img{
     transform: scale(1.2);
 }
 
-footer{justify-self: center}
+footer {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: black;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #116854;
+}
 
 
 /* Stack nav for mobile, replace with hamburger in future */
