@@ -1,7 +1,9 @@
 //server side logic for dto
 //file contains the dto class used to structure the data
 class ActivityLogIndivDTO{
-    constructor(date, petName, photos, description, feedingDetails, addons, friends, comments){
+    constructor(activityID, date, petName, photos, description, feedingDetails, addons, friends, comments, liked)
+    {
+        this.activityID = activityID;
         this.date = date; //do i need the date will it be displayed i was thinking the log shows dates? idk
         this.petName = petName;
         this.photos = photos;
@@ -10,6 +12,7 @@ class ActivityLogIndivDTO{
         this.addons = addons;
         this.friends = friends;
         this.comments = comments;
+        this.liked = liked;
     }
  
 }
