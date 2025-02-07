@@ -1,11 +1,13 @@
 ﻿body{
     margin: 0;
-    background: linear-gradient(to right,
-    rgb(240, 250, 245), /* Pastel Gradient Background */
-    rgb(225, 245, 235),
-    rgb(235, 240, 250),
-    rgb(250, 245, 240)
-    );
+    /*background: linear-gradient(to right,*/
+    /*rgb(240, 250, 245), !* Pastel Gradient Background *!*/
+    /*rgb(225, 245, 235),*/
+    /*rgb(235, 240, 250),*/
+    /*rgb(250, 245, 240)*/
+    /*);*/
+    background: url('../resources/mountain.jpg') no-repeat center fixed; /* Set mountain image */
+    background-size: cover;
     font-family: 'Optimistic Text Normal', Helvetica, Arial, sans-serif;
 }
 
@@ -51,7 +53,7 @@ a:hover
 }
 
 h2{ /* H2 was getting shifted to the left */
-    color: #1c2b33;
+    color: rgb(0, 0, 0);
     text-align: center;
     font-family: 'Optimistic Display N', Helvetica, Arial, sans-serif;
     font-weight: 400;
