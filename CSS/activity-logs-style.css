@@ -7,3 +7,14 @@
     border-radius: 8px 8px 0 0;
     text-align: center;
 }
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: black;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #116854;
+}
